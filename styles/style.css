@@ -23,6 +23,10 @@ body {
     display: flex;
 }
 
+.grid {
+    display: grid;
+}
+
 .orange {
     color: #FEA301;
 }
@@ -148,4 +152,36 @@ body {
         background-color: #333;
         margin: 3px 0;
     }
+}
+
+
+/**banner style**/
+.banner-section {
+    grid-template-columns: 640px 465px;
+    gap: 50px;
+    align-items: center;
+}
+
+.banner-title {
+    font-size: 56px;
+    line-height: 61px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.banner-btn-box {
+    max-width: 197px;
+}
+
+.banner-btn {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: #FFFFFF;
+    width: 100%;
+    border-radius: 12px;
+    border: none;
+    background-color: #000000;
+    cursor: pointer;
+    line-height: 32px;
 }

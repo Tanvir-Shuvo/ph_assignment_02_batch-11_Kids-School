@@ -12,7 +12,9 @@
 /**shared style**/
 body {
     margin: 0;
+    overflow-x: hidden;
 }
+
 
 .content-width {
     max-width: 1160px;
@@ -157,9 +159,9 @@ body {
 
 /**banner style**/
 .banner-section {
-    grid-template-columns: 640px 465px;
-    gap: 50px;
     align-items: center;
+    padding: 10px;
+    gap: 50px;
 }
 
 .banner-title {
@@ -184,4 +186,57 @@ body {
     background-color: #000000;
     cursor: pointer;
     line-height: 32px;
+}
+
+.banner-btn:hover {
+    background-color: #FEA301;
+    color: #000000;
+}
+
+/**mobile responsive (header) css**/
+
+@media only screen and (max-width: 391px) {
+    .banner-section {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .banner-image {
+        width: 100%;
+    }
+
+    .banner-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: bold;
+        margin: 0 0 18px 0;
+    }
+
+    .banner-text-p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .banner-text-p {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0 0 18px 0;
+    }
+
+    .banner-btn-box {
+        margin: 0 auto;
+    }
+
+    .banner-btn {
+        font-size: 16px;
+        padding: 6px 24px;
+        border-radius: 8px;
+        line-height: 30px;
+    }
+
 }

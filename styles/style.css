@@ -323,3 +323,36 @@ body {
 .c-item-link:hover {
     color: #000000;
 }
+
+.curriculam-arrow-box {
+    justify-content: center;
+    gap: 10px;
+}
+
+.arrow {
+    border: solid #FFFFFF;
+    border-width: 0 3px 3px 0;
+    padding: 5px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.curriculam-arrow-box p {
+    width: 48px;
+    height: 48px;
+    background-color: #FEA301;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
